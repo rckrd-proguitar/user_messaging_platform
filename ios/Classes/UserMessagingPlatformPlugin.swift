@@ -7,7 +7,7 @@ private let unknownErrorCode = "unknown"
 
 private var rootViewController: UIViewController {
     get {
-        UIApplication.shared.windows.first!.rootViewController!
+        (UIApplication.shared.keyWindow?.rootViewController!.presentedViewController!)! 
     }
 }
 
